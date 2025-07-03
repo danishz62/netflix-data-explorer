@@ -1,0 +1,68 @@
+
+
+## 🧠 Project Name: **"Netflix Data Explorer"**
+
+### 🎯 Goal:
+
+Analyze a real dataset from Netflix to extract insights using Pandas.
+
+---
+
+### 📦 Dataset:
+
+Use this dataset from Kaggle:
+**[Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows)**
+
+You can download it and load the CSV file using:
+
+```python
+import pandas as pd
+df = pd.read_csv("netflix_titles.csv")
+```
+
+---
+
+## 🚀 Quests (Step-by-step Project Tasks)
+
+### ✅ **Quest 1: Load and Explore**
+
+* Load the dataset using `pd.read_csv()`.
+* Use `.head()`, `.info()`, `.shape` to understand the data.
+* Print column names and check for null values using `.isnull().sum()`.
+
+### ✅ **Quest 2: Clean the Data**
+
+* Fill missing values in `rating`, `country`, `cast`, or `director` with `"Unknown"` or drop if necessary.
+* Convert `date_added` to datetime format using `pd.to_datetime()`.
+
+### ✅ **Quest 3: Answer Some Questions**
+
+Write Pandas code to answer these:
+
+* How many movies and how many TV shows are there?
+* What are the top 10 countries with most Netflix content?
+* What are the most common genres?
+* What is the trend of content added over the years?
+* Who are the top 10 most frequent directors?
+
+### ✅ **Quest 4: Filter & Sort**
+
+* Show all Indian movies released after 2015.
+* Find all shows (movies/TV) with a duration longer than 90 minutes.
+* List all content where the title contains the word "Love".
+
+### ✅ **Quest 5: GroupBy & Visualization (optional if you know)**
+
+* Group content by year and show the count.
+
+
+---
+
+## 🧩 Bonus Quests (For XP!)
+
+* Create a CSV report of top 5 genres per country.
+* Export your final cleaned DataFrame to CSV.
+
+---
+
+
